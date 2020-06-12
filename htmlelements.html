@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sectioning HTML Content</title>
+</head>
+
+<body>
+    <!--Header: usually a big strip across the top with big heading, logo, or tagline-->
+    <header>
+        <h1>How to Section an HTML Document</h1>
+
+        <!--Nav bar: Links to sites main sections; usually represented by menue buttons, links, or tabs.-->
+        <!--Example below shows different navigations within a website with hyperlinks attacked to each item listed in an unordered list-->
+        <nav>
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Image</a></li>
+                <li><a href="http://">News</a></li>
+                <li><a href="http://">Video</a></li>
+                <li><a href="http://">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main: Pages main content-->
+    <!--Example: videos, story, map, news headlines, ect-->
+    <main>
+        <!--Subsections would include <article>, <section>, or <div>-->
+        <article>
+            <!--The title of the article would got here-->
+            <h2>Sectioning Content in HTML</h2>
+            <!--The article text would go here-->
+            <!--Paragraph text with a span element that is highlighting a section of text-->
+            <p>This is an <span style="background-color: yellow;"> HTML document</span> explaining how to properly
+                structure an html document</p>
+            <!--Use <br> element to break up content-->
+            <p>519 North Ben Street <br> Plano Illinois 60545 </p>
+            <!--Use <hr> to create a horizonal line-->
+            <hr>
+            <div>
+                <!--Form: Allow users to enter data.-->
+                <!--The action attribute tells the form where to submit the data-->
+                <form action="">
+                    <!--Example of an input box-->
+                    <!--The placeholder attribute places temporary text to let the user know what to type in the box-->
+                    <input name="email" type="text" placeholder="Email">
+                </form>
+            </div>
+            <form action="">
+                    <select name="states" id="">
+                       <option value="1">Text for option 1</option>
+                       <option value="2">Text for option 2</option>
+                    </select>
+                 </form>
+        </article>
+        <!--Side bar: Often placed inside <main>-->
+        <!--Contains some peripheral info, links, quotes, ads, ect-->
+        <!--This aside contains a header followed by a list of related articles with links attached to them in an unordered list.-->
+        <aside>
+            <h2>Related Content</h2>
+
+            <ul>
+                <li><a href="http://">Other related articles with links</a></li>
+                <li><a href="http://">More articles with links</a></li>
+            </ul>
+        </aside>
+    </main>
+    <!--Footer: A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info-->
+    <footer>
+        <p>@copyright 2050 by Nobody. All Rights reserved</p>
+    </footer>
+</body>
+
+</html>
